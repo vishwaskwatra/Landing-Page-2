@@ -542,12 +542,47 @@ hr{
 
 	/*header section*/
 	#header{
-		display: none;
-	}
-	#header_mobile{
 		display: block;
 	}
 
+	#navigation_container{
+		height: 350px;
+	}
+
+	#navigation_container ul li{
+		position: relative;
+		right: -15px;
+		top: 55px;
+		float: right;
+		width: 100px;
+		background: red;
+		font-size: 0.725rem;
+		text-align: center;
+		margin-top: 0px !important;
+	}
+
+	#navigation_container ul li:hover{
+		position: relative;
+		right: -15px;
+		top: 55px;
+		float: right;
+		width: 115px;
+		background: red;
+		font-size: 0.8rem;
+		text-align: center;
+		margin-top: 0px !important;
+	}
+
+	#menu{
+		right: 20px;
+		width: 25px;
+		height: 18px;
+	}
+
+	.bar{
+		height: 3px;
+		width: 100%;
+	}
 	/*home section*/
 	#hr-container-before{
 		display: none;
@@ -815,3 +850,4 @@ hr{
 		height: 70px;
 	}
 }
+     
