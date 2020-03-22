@@ -10,6 +10,10 @@ hr{
 	border-top: 1px solid white;
 }
 
+#header_mobile{
+	display: none;
+}
+
 #header h2{
 	border-left:3.5px solid #D32F2F;
 	width: max-content;
@@ -29,7 +33,7 @@ hr{
 
 #header ul li:hover{
 	border:2px solid #D32F2F;
-	font-size: 18px;
+	font-size: 1vw;
 	border-radius: 8px;
 	color: white;
 }
@@ -519,4 +523,295 @@ hr{
 	bottom: 4%;
 	right: 3%;
 	z-index: 10;
+}
+
+
+
+/*media queries*/
+@media only screen and (max-width:930px){
+	#hr-services{
+		visibility: hidden;
+	}
+	#hr-services-2{
+		visibility: hidden;
+	}
+}
+
+/*for smartphones*/
+@media only screen and (max-width: 768px){
+
+	/*header section*/
+	#header{
+		display: none;
+	}
+	#header_mobile{
+		display: block;
+	}
+
+	/*home section*/
+	#hr-container-before{
+		display: none;
+	}
+
+	#imageContainer{
+		display: none;		
+	}
+
+	#home{
+		background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../Images/girl_laptop.jpg);
+		background-size: cover;
+		background-position: center; 
+	}
+
+	#home div h2{
+		font-size: 1.5rem;
+	}
+
+	#home div h2 span{
+		font-size: 1.7rem;
+	}
+
+	#home div div{
+		letter-spacing: 1;
+		line-height: 1.0;
+	}
+
+	#home div div span{
+		font-size: 1.2rem;
+	}
+	#home div h2 span i{
+		font-size: 0.8rem;
+	}
+	/*home section ends here*/
+
+	/*recommendation section starts here*/
+	#recommanded{
+		margin-top: -90px !important;
+	}
+	#recommanded h3{
+		font-size: 1.3rem;
+	}
+
+	#recommanded div div h3{
+		font-size: 1rem;
+	}
+
+	#recommanded span{
+		font-size: 1.1rem !important;
+	}
+	.swiper-slide {
+	    width: 200px;
+	    height: 200px;
+	}
+	/*recommendation section ends here*/
+
+	/*contact us section starts here*/
+	#contact-us h2{
+		font-size: 1.2rem;
+	}
+	#contact-form input{
+		height: 20px;
+		border-left: 2px solid #D32F2F;
+	}
+
+	#contact-form h2{
+		padding-bottom: 0px;
+	}
+
+	#contact-form{
+		margin-right: 99% !important;
+	}
+	
+
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	  color: white;
+	  opacity: 1; /* Firefox */
+	  font-size: 13px;
+	}
+
+	
+	#bttn{
+		padding-bottom: 26px !important;
+		margin-right: 15px;
+		margin-top: -10px!important;
+		width: 105px !important;
+		font-size: 13px;
+	}
+
+	#contact-info p{
+		font-size: 13px;
+	}
+	/*contact us section ends here*/
+
+
+	/*footer section starts here*/
+
+	#footer div div h1{
+		font-size: 1.5rem;
+	}
+
+	#footer div div p{
+		font-size: 0.9rem !important;
+		line-height: 21px !important;
+	}
+
+	#footer div div p a{
+		font-size: 0.9rem !important;
+		line-height: 21px !important;
+	}
+
+	#footer h4{
+		font-size: 1.4rem;
+		font-weight: 400 !important;
+		padding-left: 0px !important;
+	}
+
+	.subs{
+		margin-top: -45px !important;
+	}
+
+	h5{
+		font-size: 1rem;
+		padding-left: 5px;
+	}
+
+	#footer input{
+		margin-left: 0px !important;
+		width: 200px;
+		font-size: 10px;
+	}
+
+	#footer button{
+		width: 100px !important;
+		padding-top: 2px;
+		font-size: 0.9rem;
+	}
+
+	.copyright{
+		padding-top: 8px;
+		padding-left: 30px;
+	}
+
+
+}
+
+@media only screen and (max-width:550px) {
+	/*service section starts here*/
+	#services div h1{
+		font-size: 1.5rem;
+	}
+
+	#services div p{
+		font-size: 0.95rem !important;
+	}
+
+	
+
+	/*circular division*/
+	#circular-div{
+		border:.4px solid #566573;
+		width: 70%;
+		top: -50px;
+		min-height: : 370px;
+		max-height: 370px;
+	}
+	#services .icon-container{
+		height: 43px;
+		width: 43px;
+	}
+
+	#services .icon-container:hover{
+		border: 2px double #D32F2F;
+		color: orange;
+		height: 45px;
+		width: 45px;
+	}
+	#services .icon-container i{
+		font-size: 30px;
+	}
+
+	#services #icon_container_1{
+		top: -6%;
+		left: 40%;
+	}
+
+	#services #icon-container-2{
+		top: 9%;
+		left: -5.5%;
+	}
+	#services #icon-container-3{
+		top: -3%;
+		left: 92%;
+	}
+	#services #icon-container-4{
+		top: 30%;
+		left: 94%;
+	}
+	#services #icon-container-5{
+		top:19%;
+		left: -7%;
+	}
+
+
+	/*inner div starts here*/
+	#inner{
+		top: -48.3%;
+	}
+	.inner-div{
+		width: 85%;
+		min-height: 300px;
+		max-height: 300px;
+		font-size: 0.9rem;
+	}
+
+	.inner-div.arrow-top:after{
+	  right:51%;
+	  top: -4%;
+	  border-right: 7px solid transparent;
+	  border-left: 7px solid transparent;
+	  border-bottom: 7px solid white;	
+	}
+
+	.inner-div.arrow-top-left:after{
+		left:0%;
+		top: 22%;
+		border-right: 7px solid transparent;
+		border-left: 7px solid transparent;
+		border-bottom: 7px solid white;	
+	    transform: translateY(4px) rotateZ(-67deg);
+	}
+
+	.inner-div.arrow-top-right:after{
+	    right:1%;
+	    top:22%;
+	    border-right: 7px solid transparent;
+	    border-left: 7px solid transparent;
+	    border-bottom: 7px solid white;
+	    transform:rotateZ(61deg);
+	}
+
+	.inner-div.arrow-bottom-right:after{
+	    right:-2%;
+	    top:70%;
+	    border-right: 7px solid transparent;
+	    border-left: 7px solid transparent;
+	    border-bottom: 7px solid white;
+	    transform:rotateZ(110deg);
+	}
+
+	.inner-div.arrow-bottom-left:after{
+	    left:-2.3%;
+	    top:70%;
+	    border-right: 7px solid transparent;
+	    border-left: 7px solid transparent;
+	    border-bottom: 7px solid white;
+	    transform:rotateZ(-113deg);
+	}
+
+
+	/*contact us section*/
+	textarea{
+		width: 280px !important;
+		height: 70px;
+	}
 }

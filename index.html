@@ -7,16 +7,17 @@
 
 	<!-- jquery link -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 	<script src="JS/typed.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="CSS/swiper.min.css">
 
 	<!-- bootstrap links -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 	<!-- icons links -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  <!-- google icons -->
@@ -40,7 +41,7 @@
 	<div class="container-fluid row" style="position: fixed; z-index: 10; top: 0px;background: rgba(23, 32, 42); padding: 0;margin: 0;">
 		<h2 class="m-3 ml-5 pl-3 col-lg-3" data-aos="fade-left" data-aos-delay="300">Student Portal</h2>
 		<div>
-			<nav class="col-lg-7" id="navigation_container">
+			<nav class="col-lg-7 col-sm-7" id="navigation_container">
 				<ul>
 					<li class="mt-3 p-2">Home</li>
 					<li class="mt-3 p-2">About Us</li>
@@ -62,6 +63,42 @@
 			</div>
 		</div>
 	</div>
+</section>
+
+<!-- for mobile -->
+
+<section id="header_mobile">
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Downloads<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Notes</a></li>
+            <li><a href="#">Old Papers</a></li>
+            <li><a href="#">Lecture Videos</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Study Material</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Login/Register</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 </section>
 
 <!-- home -->
@@ -305,7 +342,7 @@
 						<input type="phone" name="" placeholder="Phone No." class="col-md-5 offset-md-2">
 					</div>
 					<div class="row m-3">
-						<textarea cols="76" rows="5" placeholder="Add Message here..."></textarea>
+						<textarea cols="76" class="message" rows="5" placeholder="Add Message here..."></textarea>
 					</div>
 
 					<div style="float: right;" class="mt-3">
@@ -313,7 +350,7 @@
 					</div>
 				</form>
 			</div>
-			<div id="contact-info">
+			<div id="contact-info" class="col-md-3">
 				<h2>Info</h2>
 				<p>
 					A-1 block,<br>
@@ -335,13 +372,13 @@
 <!-- footer of the web-page -->
 
 <footer class="row">
-	<section id="footer" class="container-fluid">
+	<section id="footer" class="container-fluid ml-5">
   
   <div class="text-white mt-5 row" style="width: 100%;">
     
-    <div class="col-md-2 offset-md-2">
+    <div class="col-md-2 offset-md-2 pl-4">
       <h1 style="border-left: 4px solid #D32F2F;" class="pl-3">
-        Student <br> Portal
+        Student Portal
       </h1>
       <p style="line-height:29px; margin-top: 20px; font-size: 17px" >
         We provide study materials which help students to study in proper and easier way.<br>
@@ -351,7 +388,7 @@
 
     <div class="col-md-2 pl-4">
       <h4 style="border-bottom: 1.5px solid #D32F2F; padding-left: 10px;padding-bottom: 10px;">
-        <b>Useful Links</b>
+        Useful Links
       </h4>
 
       <p style="line-height:29px; margin-top: 20px; font-size: 17px" >
@@ -383,17 +420,17 @@
       <i class="fab fa-google-plus-square ml-3" style="font-size: 30px;"></i>
     </div>
 
-    <div class="col-md-3 pl-4">
-      <h4 style="border-bottom: 1.5px solid #D32F2F;padding-bottom: 10px;">SUBSCRIPTION AREA</h4>
+    <div class="col-md-3 pl-4 subs">
+      <h4 style="border-bottom: 1.5px solid #D32F2F;padding-bottom: 10px;">Subscription Area</h4>
 
       <h5>Subscribe Us</h5>
 
       <div class="row pl-4">
-        <input type="text" name="" class="col-6"><button class="col-5 pb-1" style="background-color: #D32F2F; color: white; border:none;">Subscribe</button>
+        <input type="text" name="" class="col-md-6"><button class="col-md-5 pb-1" style="background-color: #D32F2F; color: white; border:none;">Subscribe</button>
       </div>
     </div>
 
-    <div class="ml-auto col-lg-4 col-md-5">
+    <div class="ml-auto col-lg-4 col-md-5 copyright">
       <p class="copyright-text">Copyright &copy; Student Portal                    
     </div>
 
